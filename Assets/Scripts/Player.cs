@@ -27,7 +27,7 @@ public class Player : MonoBehaviour{
     public Transform groundCheck;
     public float raio;
 
-    //variaveis da bala
+    //variaveis da munição
     public Transform spawnBala;
     public GameObject bala;
     public float fireRate = 0;
@@ -42,7 +42,7 @@ public class Player : MonoBehaviour{
         sprite = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
+    // Update is called once per frames
     void Update(){
         isOnGround = Physics2D.OverlapCircle(groundCheck.position, raio, ground);
 
